@@ -4,8 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+        integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Barber Shop | Home Page</title>
 </head>
 
@@ -48,17 +56,26 @@
 
             <div class="container hero-container">
 
-                <p class="hero-description">A hair salon for men in Kyiv</p>
-                <h1 class="hero-title">BarberShop</h1>
-                <p class="hero-text">We are experts in trendy men’s haircuts. We work quickly, carefully and with style.
-                </p>
-                <img class="hero-image" src="./img/hero-slider.png" alt="hero-slider">
-                <ul class="hero-list">
+                <div class="hero-lister">
 
-                    <li class="hero-item"><a class="hero-link" href="#">Back</a></li>
-                    <li class="hero-item"><a class="hero-link" href="#">Forward</a></li>
+                    <p class="hero-description">A hair salon for men in Kyiv</p>
+                    <h1 class="hero-title">BarberShop</h1>
+                    <p class="hero-text">We are experts in trendy men’s haircuts. We work quickly, carefully and with style.</p>
 
-                </ul>
+                </div>
+
+                <div class="hero-group">
+
+                    <img class="hero-image" src="./img/hero-slider.png" alt="hero-slider">
+
+                    <ul class="hero-list">
+
+                        <li class="hero-item"><a class="hero-link" href="#">Back</a></li>
+                        <li class="hero-item"><a class="hero-link" href="#">Forward</a></li>
+
+                    </ul>
+
+                </div>
 
             </div>
 
@@ -76,17 +93,21 @@
                     <li class="about-item"><img class="about-img" src="./img/about-img.jpg" alt="about-image"></li>
 
                 </ul>
+                
+                <div class="about-lister">
 
-                <p class="about-text">About</p>
-                <h2 class="about-header">Best Barbershop in your city</h2>
-                <p class="about-text">If you want to add more confidence to your image, you should definitely visit us.
-                </p>
-                <p class="about-description">We are a team that never stops at what has been achieved and are thirsty
-                    for changes.
-                    And when you fall into the hands of our master, you will never be the same again. We are a team that
-                    is always "on the same wave"
-                    with clients. Therefore, we are always ready to improve everyone who comes to us!</p>
-                <a class="about-booking" href="#">Online-booking</a>
+                    <p class="about-text">About</p>
+                    <h2 class="about-header">Best Barbershop in your city</h2>
+                    <p class="about-text1">If you want to add more confidence to your image, you should definitely visit us.
+                    </p>
+                    <p class="about-description">We are a team that never stops at what has been achieved and are thirsty
+                        for changes.
+                        And when you fall into the hands of our master, you will never be the same again. We are a team that
+                        is always "on the same wave"
+                        with clients. Therefore, we are always ready to improve everyone who comes to us!</p>
+                    <a class="about-booking" href="#">Online-booking</a>
+
+                </div>
 
             </div>
 
@@ -275,7 +296,7 @@
 
                 <h2 class="booking-title">Online-booking</h2>
 
-                <a class="booking-booking" href="#">Online-booking</a>
+                <a class="booking-booking" href="#">Send</a>
             </div>
 
         </section>
