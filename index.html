@@ -28,17 +28,17 @@
 
                 <ul class="header-list">
 
-                    <li class="header-item"><a class="header-text" href="./index.html">About</a></li>
-                    <li class="header-item"><a class="header-text" href="#">Services And Prices</a></li>
-                    <li class="header-item"><a class="header-text" href="#">Barbers</a></li>
-                    <li class="header-item"><a class="header-text" href="#">Contacts</a></li>
+                    <li class="header-item"><a class="header-text" href="#about">About</a></li>
+                    <li class="header-item"><a class="header-text" href="#prices">Services And Prices</a></li>
+                    <li class="header-item"><a class="header-text" href="#barbers">Barbers</a></li>
+                    <li class="header-item"><a class="header-text" href="#booking">Contacts</a></li>
 
                 </ul>
 
                 <ul class="header-list2">
 
                     <li class="header-item2"><a class="header-text2" href="tel:+380441111111">+38 044 111 11 11</a></li>
-                    <li class="header-item2"><a class="header-text2" href="#">Online-booking</a></li>
+                    <li class="header-item2"><a class="header-text2" href="#booking">Online-booking</a></li>
 
                 </ul>
 
@@ -84,7 +84,7 @@
 
 
         <!-- About -->
-        <section class="about">
+        <section class="about" id="about">
 
             <div class="container about-container">
 
@@ -109,7 +109,7 @@
                         that
                         is always "on the same wave"
                         with clients. Therefore, we are always ready to improve everyone who comes to us!</p>
-                    <a class="about-booking" href="#">Online-booking</a>
+                    <a class="about-booking" href="#booking">Online-booking</a>
 
                 </div>
 
@@ -118,7 +118,7 @@
         </section>
 
         <!-- Prices -->
-        <section class="prices">
+        <section class="prices" id="prices">
 
             <div class="container prices-container">
 
@@ -163,7 +163,7 @@
 
                 </ul>
 
-                <a class="prices-booking" href="#">Online-booking</a>
+                <a class="prices-booking" href="#booking">Online-booking</a>
 
             </div>
 
@@ -215,7 +215,7 @@
 
         <!-- Barbers -->
 
-        <section class="barbers">
+        <section class="barbers" id="barbers">
 
             <div class="container barbers-container">
 
@@ -303,7 +303,7 @@
         </section>
 
         <!-- booking -->
-        <section class="booking">
+        <section class="booking" id="booking">
 
             <div class="container booking-container">
 
@@ -314,20 +314,20 @@
                     <div class="label-container">
 
                         <label class="booking-label">
-                            <input placeholder="Name*" class="booking-input" type="text">
+                            <input placeholder="Name*" class="booking-input" type="text" required>
                         </label>
 
                         <label class="booking-label">
-                            <input placeholder="Phone*" class="booking-input" type="text">
+                            <input placeholder="Phone*" class="booking-input" type="tel" required>
                         </label>
 
                     </div>
 
                     <label class="booking-label">
-                        <input placeholder="Message" class="booking-input" type="text">
+                        <input placeholder="Message*" class="booking-input" type="text" required>
                     </label>
 
-                    <button class="booking-booking">Send</button>
+                    <button class="booking-booking" type="reset">Send</button>
 
                 </form>
 
@@ -349,21 +349,27 @@
 
         </section>
 
-        <!-- contact -->
-        <section class="contact">
-
-            <div class="container contact-container">
-
-            </div>
-
-        </section>
-
     </main>
 
 
     <footer class="footer">
 
+        <div class="container footer-box">
 
+            <p class="footer-copyright">&#169;Copyright 2020</p>
+
+            <ul class="footer-list">
+
+                <li class="footer-item">
+                    <a href="https://www.instagram.com/" target="_blank" class="footer-insta">Instagram</a>
+                </li>
+                <li class="footer-item">
+                    <a href="https://www.youtube.com/watch?v=bSVkBEsWMWs" target="_blank" class="footer-insta">Youtube</a>
+                </li>
+
+            </ul>
+
+        </div>
 
     </footer>
 </body>
