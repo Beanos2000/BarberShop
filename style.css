@@ -14,6 +14,7 @@
 .header {
 
     padding-top: 40px;
+    padding-left: 400px;
 
     position: absolute;
     width: 100%;
@@ -34,8 +35,11 @@
 
 }
 
-.header-text {
+.header-item {
+    position: relative;
+}
 
+.header-text {
     color: #FFF;
 
     font-family: "Open Sans";
@@ -44,20 +48,38 @@
     font-weight: 600;
     line-height: 16px;
     letter-spacing: 1.2px;
-
+    transition: all 250ms ease-out;
 }
 
 .header-text:hover {
 
     color: #FF6C00;
+}
 
+.header-text:hover::after {
+    opacity: 1;
+}
+
+.header-text:after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    border-radius: 10px;
+    display: block;
+    background-color: #FF6C00;
+    position: absolute;
+    left: 0px;
+    bottom: -20px;
+    opacity: 0;
+    transition: all 250ms cubic-bezier(.86, -0.49, 1, .6);
 }
 
 .header-list2 {
 
     display: flex;
     gap: 60px;
-    margin-left: auto;
+    margin-left: 240px;
+    align-items: center;
 
 }
 
@@ -85,13 +107,13 @@
     line-height: normal;
     letter-spacing: 1.2px;
     text-transform: uppercase;
+    transition: all 250ms ease-out;
 
 }
 
 .header-text2:hover {
-
     color: #FF6C00;
-
+    transform: scale(1.1) skew(-10deg);
 }
 
 /* ================================== */
@@ -101,18 +123,17 @@
     background-image: url(./img/hero-background.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 1200px;
 
     padding-bottom: 40px;
     padding-top: 272px;
-
+    padding-left: 400px;
 }
 
 .hero-container {
-
     display: flex;
     justify-content: space-between;
-
+    position: relative;
 }
 
 .hero-description {
@@ -157,10 +178,14 @@
 
     margin-bottom: 20px;
 
+    background: url(https://i.giphy.com/fsULJFFGv8X3G.gif);
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    color: transparent;
 }
 
 .hero-text {
-
     color: #9DA4BD;
 
     font-family: "Open Sans";
@@ -173,38 +198,31 @@
     margin-bottom: 144px;
 
     width: 358px;
-
 }
 
 .hero-group {
-
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
-
 }
 
 .hero-list {
-
     display: flex;
+    transform: translateX(-200px);
     gap: 24px;
-
 }
 
 .hero-item::after {
-
     content: "";
     width: 60px;
     height: 1px;
     background: rgba(157, 164, 189, 0.60);
     display: block;
     margin-top: 8px;
-
 }
 
 .hero-link {
-
     color: #FFF;
 
     font-family: "Open Sans";
@@ -213,7 +231,62 @@
     font-weight: 600;
     line-height: normal;
     letter-spacing: 1.1px;
+}
 
+.hero-socials {
+    transform: translateX(-220px);
+    display: flex;
+    gap: 270px;
+    padding-top: 40px;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: -80%;
+    left: 0px;
+    width: 155px;
+    height: 192%;
+}
+
+.hero-icon {
+    width: 68.93px;
+    height: 55.46px;
+    fill: #303030;
+}
+
+.hero-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 90px;
+}
+
+.hero-items::after {
+    content: "";
+    width: 60px;
+    height: 1px;
+    background: #303030;
+    display: block;
+    margin-top: 8px;
+    transform: rotate(90deg);
+}
+
+.hero-element {
+    transform: rotate(-90deg);
+}
+
+.hero-social {
+    color: #303030;
+    font-family: "Open Sans";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.2px;
+}
+
+.hero-social:hover {
+    color: #FF6C00;
 }
 
 /* ================================== */
@@ -237,6 +310,14 @@
     display: flex;
     gap: 30px;
 
+}
+
+.about-item {
+    transition: 250ms ease-out all;
+}
+
+.about-item:hover {
+    transform: scale(1.2);
 }
 
 .about-header {
@@ -383,6 +464,11 @@
     margin-bottom: 44px;
 
     text-align: start;
+    background: url(https://i.giphy.com/fsULJFFGv8X3G.gif);
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    color: transparent;
 
 }
 
@@ -396,9 +482,7 @@
 }
 
 .prices-item {
-
     flex-basis: calc((100% - 30px) / 2);
-
 }
 
 .prices-items {
@@ -488,26 +572,35 @@
 }
 
 .reviews-list {
-
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
-
 }
 
 .reviews-items {
-
-    width: 170px;
-    height: 133px;
+    /* flex-basis: calc((100% - 30px) / 2); */
     background-color: #F7F7F7;
-
     display: flex;
     flex-direction: column;
     gap: 6px;
-    justify-content: center;
     align-items: center;
+    padding: 20px 24px;
+    transition: all 250ms ease-out;
+}
 
+.reviews-items:nth-child(2n) {
+    transform: translateY(35px);
+}
+
+.reviews-items:hover {
+    transform: rotate(45deg);
+    transform-origin: top left;
+}
+
+.reviews-items:nth-child(2n):hover {
+    transform: rotate(-45deg);
+    transform-origin: top right;
 }
 
 .reviews-folder {
@@ -720,11 +813,12 @@
     width: 44px;
     height: 44px;
     background-color: #FFF;
+    transition: all 250ms ease-out;
 
 }
 
 .barbers-link:hover {
-
+    transform: scale(1.3) rotate(360deg);
     background-color: #FF6C00;
 
     .barbers-icon {
@@ -734,6 +828,7 @@
 }
 
 .barbers-icon {
+    transition: all 250ms ease-out;
     width: 20px;
     height: 20px;
     fill: #303030;
@@ -768,6 +863,37 @@
     display: flex;
     gap: 30px;
 
+}
+
+.image-item {
+    position: relative;
+    overflow: hidden;
+    transition: all 250ms ease-in;
+}
+
+.image-item:hover {
+    .image-description {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+.image-description {
+    transition: all 250ms ease-out;
+    color: #FFF;
+    font-size: 21px;
+    font-weight: 600px;
+    font-style: italic;
+    line-height: normal;
+    background-color: #ff6a007e;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    opacity: 1;
+    transform: translate(0, -100%);
 }
 
 /* ================================== */
@@ -861,11 +987,14 @@
     margin-top: 44px;
     width: 160px;
 
+    transition: all 250ms ease-out;
+
 }
 
 .booking-booking:hover {
 
     cursor: pointer;
+    color: #FF6C00;
 
 }
 
@@ -1091,6 +1220,7 @@
     width: 20px;
     height: 30px;
     fill: tomato;
+
 }
 
 /******************* Model Window *******************/
@@ -1102,10 +1232,11 @@
     height: 100%;
     background-color: #ff6a0071;
     opacity: 1;
+    transition: 500ms all ease-in;
 
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */ 
 }
 
 .is-hidden {
@@ -1114,10 +1245,18 @@
 }
 
 .model {
+    transform: translate(-50%, -50%) scale(1);
     width: 528px;
     background-color: #FFF;
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     padding: 40px;
+    transition: 500ms all ease-out;
+}
+
+.is-hidden .model {
+    transform: translate(-50%, -1000px) scale(0);
 }
 
 .button-close {
@@ -1135,6 +1274,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 250ms ease-out;
 
 }
 
@@ -1148,7 +1288,7 @@
 }
 
 .model-x {
-
+    transition: all 250ms ease-out;
     width: 13px;
     height: 13px;
 
@@ -1185,6 +1325,7 @@
 
     display: block;
     margin-top: 4px;
+    transition: all 250ms ease-out;
 }
 
 .model-input:hover,
@@ -1198,6 +1339,7 @@
 }
 
 .input-icon {
+    transition: all 250ms ease-out;
     width: 18px;
     height: 18px;
     fill: #212121;
