@@ -1,0 +1,136 @@
+.reviews {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 130px;
+}
+
+.reviews-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.reviews-items {
+    background-color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+    padding: 20px 24px;
+    transition: all 250ms ease-out;
+}
+
+.reviews-items:nth-child(2n) {
+    transform: translateY(35px);
+}
+
+.reviews-items:hover {
+    transform: rotate(45deg);
+    transform-origin: top left;
+}
+
+.reviews-items:nth-child(2n):hover {
+    transform: rotate(-45deg);
+    transform-origin: top right;
+}
+
+.reviews-folder {
+    display: flex;
+}
+
+.reviews-number {
+    width: 80px;
+    color: #303030;
+    text-align: center;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.1px;
+}
+
+.reviews-plus {
+    width: 13px;
+    height: 13px;
+    fill: #FF6C00;
+}
+
+.reviews-description {
+    width: 122px;
+    color: #303030;
+    text-align: center;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.reviews-info {
+    transform: translateX(-100px);
+}
+
+.reviews-caption {
+    color: #303030;
+    font-family: "Open Sans";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.reviews-caption::before {
+
+    content: "";
+    width: 60px;
+    height: 1px;
+    background: #303030;
+    display: inline-block;
+
+    margin-right: 20px;
+
+}
+
+.reviews-header {
+
+    width: 430px;
+
+    color: #303030;
+
+    font-family: Raleway;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.1px;
+
+    margin-bottom: 20px;
+
+}
+
+.reviews-text {
+
+    color: #555;
+
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 167%;
+    letter-spacing: 0.36px;
+
+    width: 500px;
+
+}

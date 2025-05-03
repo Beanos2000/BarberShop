@@ -12,8 +12,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
         integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/main.min.css">
     <title>Barber Shop | Home Page</title>
 </head>
 
@@ -60,7 +61,7 @@
                 <div class="hero-lister">
 
                     <p class="hero-description">A hair salon for men in Kyiv</p>
-                    <h1 class="hero-title">BarberShop</h1>
+                    <h1 class="hero-title animate__animated animate__flipInX">BarberShop</h1>
                     <p class="hero-text">We are experts in trendy men’s haircuts. We work quickly, carefully and with
                         style.</p>
 
@@ -135,14 +136,14 @@
 
             <div class="container prices-container">
 
-                <p class="prices-caption">Spend your time with the best masters</p>
-                <h2 class="prices-title">Services and prices</h2>
+                <p class="prices-caption" data-aos="fade-right">Spend your time with the best masters</p>
+                <h2 class="prices-title" data-aos="fade-right">Services and prices</h2>
 
 
                 <!-- Prices List -->
                 <ul class="prices-list">
 
-                    <li class="prices-item">
+                    <li class="prices-item" data-aos="flip-up">
 
                         <ul class="prices-items">
 
@@ -158,7 +159,7 @@
 
                     </li>
 
-                    <li class="prices-item">
+                    <li class="prices-item" data-aos="flip-up">
 
                         <ul class="prices-items">
 
@@ -191,7 +192,7 @@
                 <!-- Reviews list -->
                 <ul class="reviews-list">
 
-                    <li class="reviews-items">
+                    <li class="reviews-items" data-aos="zoom-in-right">
                         <div class="reviews-folder">
                             <h3 class="reviews-number">600</h3>
                             <svg class="reviews-plus">
@@ -201,7 +202,7 @@
                         <p class="reviews-description">Satisfied customers per day</p>
                     </li>
 
-                    <li class="reviews-items">
+                    <li class="reviews-items" data-aos="zoom-in-left">
                         <div class="reviews-folder">
                             <h3 class="reviews-number">50</h3>
                             <svg class="reviews-plus">
@@ -211,7 +212,7 @@
                         <p class="reviews-description">Awards for excellent service</p>
                     </li>
 
-                    <li class="reviews-items">
+                    <li class="reviews-items" data-aos="zoom-in-right">
                         <div class="reviews-folder">
                             <h3 class="reviews-number">20</h3>
                             <svg class="reviews-plus">
@@ -221,7 +222,7 @@
                         <p class="reviews-description">Kyiv’s best barbers</p>
                     </li>
 
-                    <li class="reviews-items">
+                    <li class="reviews-items" data-aos="zoom-in-left">
                         <div class="reviews-folder">
                             <h3 class="reviews-number">100</h3>
                             <svg class="reviews-plus">
@@ -256,7 +257,7 @@
                 <h2 class="barbers-header">Our barbers</h2>
 
                 <ul class="barbers-list">
-                    <li class="barbers-item">
+                    <li class="barbers-item" data-aos="fade-right">
                         <img src="./img/barber1.jpg" alt="barber-image" class="barbers-image">
                         <h3 class="barbers-name">John Smith</h3>
                         <p class="barbers-skill">Extreme Barber</p>
@@ -283,7 +284,7 @@
                                 </a></li>
                         </ul>
                     </li>
-                    <li class="barbers-item">
+                    <li class="barbers-item" data-aos="fade-down">
                         <img src="./img/barber2.jpg" alt="barber-image" class="barbers-image">
                         <h3 class="barbers-name">Michele Doe</h3>
                         <p class="barbers-skill">Extreme Barber</p>
@@ -310,7 +311,7 @@
                                 </a></li>
                         </ul>
                     </li>
-                    <li class="barbers-item">
+                    <li class="barbers-item" data-aos="fade-left">
                         <img src="./img/barber3.jpg" alt="barber-image" class="barbers-image">
                         <h3 class="barbers-name">Alan Black</h3>
                         <p class="barbers-skill">Extreme Barber</p>
@@ -352,25 +353,25 @@
 
                 <ul class="image-list">
 
-                    <li class="image-item">
+                    <li class="image-item" data-aos="zoom-in-up">
                         <img class="image-image" src="./img/image1.jpg" alt="image">
                         <p class="image-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
                             animi consequatur dicta harum magnam, aliquid ipsum? Impedit dicta sit molestiae temporibus
                             quam nobis veniam illo voluptatem autem, nostrum odit dolorum.</p>
                     </li>
-                    <li class="image-item">
+                    <li class="image-item" data-aos="zoom-in-up">
                         <img class="image-image" src="./img/image2.jpg" alt="image">
                         <p class="image-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
                             animi consequatur dicta harum magnam, aliquid ipsum? Impedit dicta sit molestiae temporibus
                             quam nobis veniam illo voluptatem autem, nostrum odit dolorum.</p>
                     </li>
-                    <li class="image-item">
+                    <li class="image-item" data-aos="zoom-in-up">
                         <img class="image-image" src="./img/image3.jpg" alt="image">
                         <p class="image-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
                             animi consequatur dicta harum magnam, aliquid ipsum? Impedit dicta sit molestiae temporibus
                             quam nobis veniam illo voluptatem autem, nostrum odit dolorum.</p>
                     </li>
-                    <li class="image-item">
+                    <li class="image-item" data-aos="zoom-in-up">
                         <img class="image-image" src="./img/image4.jpg" alt="image">
                         <p class="image-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
                             animi consequatur dicta harum magnam, aliquid ipsum? Impedit dicta sit molestiae temporibus
@@ -525,6 +526,12 @@
     </div>
 
     <script src="./JS/model.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

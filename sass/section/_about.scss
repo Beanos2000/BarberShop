@@ -1,0 +1,81 @@
+.about {
+    padding-top: 120px;
+    margin-bottom: 120px;
+}
+
+.about-container {
+    display: flex;
+    gap: 30px;
+}
+
+.about-list {
+    display: flex;
+    gap: 30px;
+}
+
+.about-item {
+    transition: 250ms ease-out all;
+}
+
+.about-item:hover {
+    transform: scale(1.2);
+}
+
+.about-header {
+    color: #303030;
+    font-family: Raleway;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.1px;
+    width: 470px;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    color: #555;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.36px;
+    margin-bottom: 20px;
+}
+
+.about-text1 {
+    color: #555;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 167%;
+    letter-spacing: 0.36px;
+    width: 470px;
+    height: 60px;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+}
+
+.about-description {
+    color: #555;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 186%;
+    letter-spacing: 0.28px;
+    width: 470px;
+    margin-bottom: 42px;
+}
+
+.about-booking {
+    color: #303030;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: 1px solid #FF6C00;
+}
