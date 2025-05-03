@@ -7,17 +7,11 @@
     background-color: #ff6a0071;
     opacity: 1;
     transition: 500ms all ease-in;
-
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */ 
 }
-
 .is-hidden {
     pointer-events: none;
     opacity: 0;
 }
-
 .model {
     transform: translate(-50%, -50%) scale(1);
     width: 528px;
@@ -28,11 +22,9 @@
     padding: 40px;
     transition: 500ms all ease-out;
 }
-
 .is-hidden .model {
     transform: translate(-50%, -1000px) scale(0);
 }
-
 .button-close {
     width: 30px;
     height: 30px;
@@ -40,54 +32,40 @@
     background-color: transparent;
     border: none;
     outline: 1px solid rgba(0, 0, 0, 0.10);
-
     position: absolute;
     top: 7px;
     right: 8px;
-
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all 250ms ease-out;
-
 }
-
 .button-close:hover,
 .button-close:focus {
-
     .model-x {
         fill: #FF6C00;
     }
-
 }
-
 .model-x {
     transition: all 250ms ease-out;
     width: 13px;
     height: 13px;
-
 }
-
 .model-title {
     color: #212121;
     text-align: center;
     font-size: 20px;
     font-weight: 700;
-    line-height: normal;
     letter-spacing: 0.6px;
     margin-bottom: 12px;
 }
-
 .model-label {
     color: #757575;
     font-size: 12px;
     font-weight: 400;
-    line-height: normal;
     letter-spacing: 0.12px;
-
     position: relative;
 }
-
 .model-input {
     width: 100%;
     height: 40px;
@@ -96,33 +74,27 @@
     outline: 1px solid rgba(33, 33, 33, 0.20);
     padding-left: 42px;
     margin-bottom: 10px;
-
     display: block;
     margin-top: 4px;
     transition: all 250ms ease-out;
 }
-
 .model-input:hover,
 .model-input:focus {
     outline: 1px solid rgba(230, 124, 4, 0.2);
 }
-
 .model-input:hover+.input-icon,
 .model-input:focus+.input-icon {
     fill: rgba(230, 124, 4, 0.2);
 }
-
 .input-icon {
     transition: all 250ms ease-out;
     width: 18px;
     height: 18px;
     fill: #212121;
-
     position: absolute;
     top: 30px;
     left: 12px;
 }
-
 .model-textarea {
     display: block;
     width: 100%;
@@ -132,49 +104,34 @@
     border-radius: 4px;
     outline: 1px solid rgba(33, 33, 33, 0.20);
     border: none;
-
     margin-top: 4px;
 }
-
 .model-group {
-
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
     margin-bottom: 30px;
-
 }
-
 .model-checkbox {
-
     width: 16px;
     height: 15px;
-
 }
-
 .model-description {
-
     color: #757575;
-
     font-family: Roboto;
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    /* 171.429% */
     letter-spacing: 0.42px;
     margin-left: 9px;
     margin-right: 4px;
-
 }
 
 .model-link {
-
     color: #2196F3;
     font-family: Roboto;
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.42px;
@@ -184,11 +141,8 @@
     text-decoration-thickness: auto;
     text-underline-offset: auto;
     text-underline-position: from-font;
-
 }
-
 .model-button {
-
     border-radius: 4px;
     background: #2196F3;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -196,19 +150,13 @@
     text-align: center;
     font-family: Roboto;
     font-size: 16px;
-    font-style: normal;
     font-weight: 700;
     line-height: 30px;
-    /* 187.5% */
     letter-spacing: 0.96px;
     padding: 10px 52px;
     border: none;
-
 }
-
 .model-group1 {
-
     display: flex;
     justify-content: center;
-
 }

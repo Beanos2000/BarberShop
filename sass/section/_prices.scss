@@ -4,20 +4,16 @@
     background: url(../img/prices-background.jpg) lightgray 50% / cover no-repeat;
     text-align: center;
 }
-
 .prices-caption {
     color: rgba(157, 164, 189, 0.60);
     font-size: 11px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
     text-transform: uppercase;
     margin-bottom: 20px;
     text-align: start;
     display: flex;
     align-items: center;
 }
-
 .prices-caption::before {
     content: "";
     width: 60px;
@@ -26,14 +22,11 @@
     display: inline-block;
     margin-right: 20px;
 }
-
 .prices-title {
     color: #FFF;
     font-family: Raleway;
     font-size: 42px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     letter-spacing: 2.1px;
     margin-bottom: 44px;
     text-align: start;
@@ -43,32 +36,26 @@
     background-clip: text;
     color: transparent;
 }
-
 .prices-list {
     display: flex;
     gap: 30px;
     margin-bottom: 44px;
 }
-
 .prices-item {
     flex-basis: calc((100% - 30px) / 2);
 }
-
 .prices-items {
     padding: 30px 20px;
     background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.20) 100%)
 }
-
 .prices-item:last-child {
     .prices-items {
         background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.20) 100%);
     }
 }
-
 .prices-elements {
     color: #9DA4BD;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
     line-height: 167%;
     letter-spacing: 0.36px;
@@ -78,19 +65,15 @@
 .prices-element {
     color: #9DA4BD;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
     line-height: 167%;
     letter-spacing: 0.36px;
     margin-bottom: 20px;
 }
-
 .prices-booking {
     color: #FFF;
     font-size: 12px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
     letter-spacing: 1.08px;
     text-transform: uppercase;
     text-align: center;

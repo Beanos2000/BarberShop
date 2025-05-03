@@ -1,167 +1,98 @@
 .booking {
-
     background: #191C26;
     padding-top: 130px;
     padding-bottom: 120px;
-
     background: url(../img/contact-bg.webp) #191C26 -170.29px 0px / 123.004% 100% no-repeat;
-
     background-repeat: no-repeat;
     background-position: right;
     background-size: 50%;
-
 }
-
 .booking-container {
-
     display: flex;
     gap: 100px;
-
 }
-
 .booking-title {
-
     color: #FFF;
-
     font-family: Raleway;
     font-size: 42px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     letter-spacing: 2.1px;
-
     margin-bottom: 44px;
-
 }
-
 .booking-input {
-
     background-color: transparent;
     border-top: transparent;
     border-left: transparent;
     border-right: transparent;
-
     width: 270px;
-    /* width: 100%; */
     border-color: rgba(157, 164, 189, 0.40);
-
     display: block;
-
     color: rgba(157, 164, 189, 0.40);
-
-    font-family: "Open Sans";
     font-size: 11px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
     letter-spacing: 1.1px;
     text-transform: uppercase;
 }
-
 .label-container {
     display: flex;
     gap: 30px;
-
     margin-bottom: 44px;
 }
-
 .booking-booking {
-
     color: #FFF;
-
     text-align: center;
-    font-family: "Open Sans";
     font-size: 12px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
     letter-spacing: 1.08px;
     text-transform: uppercase;
-
     padding: 12px 38px;
-
     border-radius: 25px;
     border: 1px solid #FF6C00;
     background-color: transparent;
-
     margin-top: 44px;
     width: 160px;
-
     transition: all 250ms ease-out;
-
 }
-
 .booking-booking:hover {
-
     cursor: pointer;
     color: #FF6C00;
-
 }
 .contact-title {
-
     color: #FFF;
-
     font-family: Raleway;
     font-size: 42px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     letter-spacing: 2.1px;
-
     margin-bottom: 40px;
-
 }
-
 .contact-location {
-
     color: #9DA4BD;
-
-    font-family: "Open Sans";
     font-size: 18px;
-    font-style: normal;
     font-weight: 700;
     line-height: 30px;
-    /* 166.667% */
     letter-spacing: 0.36px;
     width: 230px;
     margin-bottom: 20px;
-
     display: flex;
     align-items: center;
     gap: 16px;
-
 }
-
 .contact-number {
-
     color: #9DA4BD;
-
-    font-family: "Open Sans";
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
     line-height: 30px;
-    /* 166.667% */
     letter-spacing: 0.36px;
-
     display: flex;
     align-items: center;
     gap: 16px;
-
     margin-bottom: 20px;
-
 }
-
 .contact-email {
-
     color: #9DA4BD;
-
-    font-family: "Open Sans";
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
     line-height: 30px;
-    /* 166.667% */
     letter-spacing: 0.36px;
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -169,66 +100,42 @@
     text-decoration-thickness: auto;
     text-underline-offset: auto;
     text-underline-position: from-font;
-
     margin-bottom: 70px;
-
     display: flex;
     align-items: center;
     gap: 16px;
-
 }
-
 .contact-icon {
     width: 24px;
     height: 24px;
     fill: #9DA4BD;
 }
-
 .contact-location>.contact-icon {
-
     width: 40px;
     height: 30px;
-
 }
-
 .contact-text {
-
     color: #FFF;
-
-    font-family: "Open Sans";
     font-size: 11px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
     text-transform: uppercase;
     margin-bottom: 20px;
-
     display: flex;
     align-items: center;
-
 }
-
 .contact-text::before {
-
     content: "";
     width: 60px;
     height: 1px;
     background: rgba(157, 164, 189, 0.60);
     display: inline-block;
     margin-right: 20px;
-
 }
 
 .contact-time {
-
     color: #9DA4BD;
-
-    font-family: "Open Sans";
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
     line-height: 30px;
-    /* 166.667% */
     letter-spacing: 0.36px;
-
 }
