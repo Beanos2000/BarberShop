@@ -22,16 +22,9 @@
     padding: 20px 24px;
     transition: all 250ms ease-out;
 }
-.reviews-items:nth-child(2n) {
-    transform: translateY(35px);
-}
 .reviews-items:hover {
     transform: rotate(45deg);
     transform-origin: top left;
-}
-.reviews-items:nth-child(2n):hover {
-    transform: rotate(-45deg);
-    transform-origin: top right;
 }
 .reviews-folder {
     display: flex;

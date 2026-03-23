@@ -60,7 +60,7 @@ body {
   font-weight: 600;
   line-height: 16px;
   letter-spacing: 1.2px;
-  transition: all 250ms ease-out;
+  transition: all 250ms ease-in-out;
 }
 
 .header-text:hover {
@@ -82,7 +82,7 @@ body {
   left: 0px;
   bottom: -20px;
   opacity: 0;
-  transition: all 250ms cubic-bezier(0.86, -0.49, 1, 0.6);
+  transition: all 250ms ease-in-out;
 }
 
 .header-list2 {
@@ -92,27 +92,12 @@ body {
   align-items: center;
 }
 
-.header-item2:last-child {
-  animation-name: abc;
-  animation-duration: 2s;
-  animation-timing-function: ease-in;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
 .header-item2:last-child .header-text2 {
   border-radius: 25px;
   border: 1px solid #FF6C00;
   padding: 12px 20px;
 }
 
-@keyframes abc {
-  0% {
-    transform: scale(0.8);
-  }
-  100% {
-    transform: scale(1.1);
-  }
-}
 .header-text2 {
   color: #FFF;
   background-color: transparent;
@@ -125,7 +110,7 @@ body {
 
 .header-text2:hover {
   color: #FF6C00;
-  transform: scale(1.1) skew(-10deg);
+  transform: scale(1.05);
 }
 
 .hero {
@@ -174,12 +159,6 @@ body {
   line-height: normal;
   letter-spacing: 3.6px;
   margin-bottom: 20px;
-  background: url(https://i.giphy.com/fsULJFFGv8X3G.gif);
-  background-size: cover;
-  background-position: center;
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
 }
 
 .hero-text {
@@ -299,7 +278,7 @@ body {
 }
 
 .about-item:hover {
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 
 .about-header {
@@ -352,6 +331,10 @@ body {
   padding: 12px 20px;
   border-radius: 25px;
   border: 1px solid #FF6C00;
+  transition: all 200ms ease-in-out;
+}
+.about-booking:hover {
+  color: #FF6C00;
 }
 
 .prices {
@@ -389,12 +372,6 @@ body {
   letter-spacing: 2.1px;
   margin-bottom: 44px;
   text-align: start;
-  background: url(https://i.giphy.com/fsULJFFGv8X3G.gif);
-  background-size: cover;
-  background-position: center;
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
 }
 
 .prices-list {
@@ -444,6 +421,10 @@ body {
   border-radius: 25px;
   border: 1px solid #FF6C00;
   padding: 12px 20px;
+  transition: all 250ms ease-in-out;
+}
+.prices-booking:hover {
+  color: #FF6C00;
 }
 
 .reviews {
@@ -474,18 +455,9 @@ body {
   transition: all 250ms ease-out;
 }
 
-.reviews-items:nth-child(2n) {
-  transform: translateY(35px);
-}
-
 .reviews-items:hover {
   transform: rotate(45deg);
   transform-origin: top left;
-}
-
-.reviews-items:nth-child(2n):hover {
-  transform: rotate(-45deg);
-  transform-origin: top right;
 }
 
 .reviews-folder {

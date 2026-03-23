@@ -30,11 +30,6 @@
     letter-spacing: 2.1px;
     margin-bottom: 44px;
     text-align: start;
-    background: url(https://i.giphy.com/fsULJFFGv8X3G.gif);
-    background-size: cover;
-    background-position: center;
-    background-clip: text;
-    color: transparent;
 }
 .prices-list {
     display: flex;
@@ -80,4 +75,9 @@
     border-radius: 25px;
     border: 1px solid #FF6C00;
     padding: 12px 20px;
+    transition: all 250ms ease-in-out;
+
+    &:hover {
+        color: #FF6C00;
+    }
 }

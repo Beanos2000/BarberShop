@@ -14,7 +14,7 @@
     transition: 250ms ease-out all;
 }
 .about-item:hover {
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 .about-header {
     color: #303030;
@@ -62,4 +62,9 @@
     padding: 12px 20px;
     border-radius: 25px;
     border: 1px solid #FF6C00;
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+        color:#FF6C00;
+    }
 }
